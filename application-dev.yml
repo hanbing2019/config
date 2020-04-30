@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: zuul-app
+  security:
+    user:
+      name: tim
+      password: 321
+
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://admin:enjoy@eureka1:7001/eureka,http://admin:enjoy@eureka2:7002/eureka,http://admin:enjoy@eureka3:7003/eureka
+server:
+  port: 9091
+#zuul:
+#  routes:
+#    user.path: /user-proxy/**
+#    user.serviceId: USER
+#  ignored-services:
+#    "*"
+#  prefix: /enjoy-api
+zuul:
+  routes:
+    users:
+      path: /users-proxy/**
+      serviceId: user
+  ignored-services:
+    "*"
+  prefix: /enjoy-api
