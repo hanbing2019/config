@@ -1,5 +1,5 @@
 server:
-  port: 7002
+  port: 7003
 #eureka配置
 #定义eureka实例，hostname为eureka所在的主机名称
 eureka:
@@ -13,7 +13,10 @@ eureka:
     fetch-registry: false #eureka本身也是一个服务，服务端不需要去获取注册的服务信息
     register-with-eureka: false #服务端不需要注册
 
+
 spring:
+  application:
+    name: eureka-config
   security:
     user:
       name: admin

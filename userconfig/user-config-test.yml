@@ -36,7 +36,7 @@ eureka:
 
 #springboot的actuate监控配置
 info:
-  app.name: userconfig
+  app.name: user-config
   company.name: tom
   build.artifactId: $project.artifactId$
   build.modelVersion: $project.modelVersion$

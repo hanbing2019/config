@@ -1,5 +1,5 @@
 spring:
   application:
-    name: userconfig
+    name: user-config
   profiles:
     active: test
