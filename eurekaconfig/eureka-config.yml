@@ -1,5 +1,6 @@
-spring:
-  application:
-    name: eureka-config
-  profiles:
-    active: dev1
+eureka:
+  instance:
+    hostname: eureka
+  client:
+    register-with-eureka: false
+    fetch-registry: false
