@@ -2,4 +2,4 @@ spring:
   application:
     name: eureka-config
   profiles:
-    active: dev
+    active: dev1
