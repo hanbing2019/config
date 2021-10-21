@@ -4,7 +4,7 @@ server:
 
 eureka:
   instance:
-    instance-id: cloud-user
+    instance-id: cloud-user1
     prefer-ip-address: true
   client: # 客户端进行Eureka注册的配置
     register-with-eureka: true
